@@ -1,0 +1,305 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-size: 1.35em;
+	font-family: 'Varela Round', sans-serif;
+	color: #fff;
+	background: #e8e9e9;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.container {
+	padding: 10px;
+	background: #fff;
+    border-radius: 5px;
+	margin: 45px auto;
+    box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+}
+.item {
+	color: #fff;
+	padding: 15px;
+	margin: 5px;	
+	background: #3db5da;
+	border-radius: 3px;
+}
+
+.button {
+	color: #fff;
+	text-align: center;
+	padding: .625em 1.25em;
+	background: rgb(166, 88, 202);
+    border-radius: .35em;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    color: #585858;
+}
+
+h1 {
+    font-size: 1.75em;
+    text-align: center;
+}
+
+h3 {
+    color: #757575;
+}
+
+p {
+    color: #7a7979;  
+}
+
+nav a {
+    display: block;
+    padding: 8px; 
+    color: rgb(166, 88, 202);  
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a:hover {
+    color: lightblue;
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+li {
+    text-align: center;
+}
+
+/* Nav media queries -------------- */
+
+@media (min-width: 769px) {
+   
+    h1 {
+        margin-bottom: 0;
+    }    
+
+    .main-header,
+    .main-nav,
+    .row,
+    .threerow,
+    .rowthree {
+        display: flex;
+    }
+
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Two column flex layout */
+
+    .col {
+        flex: 1;
+    }
+
+    /* Three column flex layout */
+
+    .threecol {
+       flex: 1 45%; 
+       flex-direction: column;
+    }
+
+    .threerow {
+        flex-wrap: wrap;
+    }
+
+    .rowtwo {
+        order: -1;
+    }
+
+    /* Button --------------- */
+
+    .button {
+        margin-top: auto;
+        align-self: center;
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Two column flex layout */
+
+    .primary {
+        flex: 2;
+    }
+
+    /* Three column flex layout */
+
+    .threecol {
+        flex-basis: 0;
+    }
+
+    .rowone {
+        flex-grow: 1.4;
+    }
+  
+}
+
+/* Apples styling --------------- */
+
+.apple-container {
+    display: flex;
+    height: 150px;
+}
+
+/* Oranges styling --------------- */
+
+.orange-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* Peaches styling --------------- */
+
+.peach-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.peach-4 {
+    order: 1;
+}
+
+/* Pears styling --------------- */
+
+.pear-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 280px;
+}
+
+/* Berries styling --------------- */
+
+.berry-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Lettuce styling --------------- */
+
+.lettuce-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lettuce-1 {
+    margin-right: auto;
+}
+
+/* Spinach styling --------------- */
+
+.spinach-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Spinach styling --------------- */
+
+.spinach-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.spinach-item {
+    flex-grow: 1;
+}
+
+.spinach-3 {
+    flex-grow: 4;
+}
+
+/* Peas styling --------------- */
+
+.peas-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.peas-item {
+    flex-grow: 1;
+}
+
+/* Corn styling --------------- */
+
+.corn-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.corn-item {
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+/* Shorthand:
+
+.corn-item {
+    flex: 1 200px;   grow then basis
+} */
+
+/* Jicama styling --------------- */
+
+.jicama-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jicama-item {
+    flex: 1 200px;
+}
+
+.jicama-2 {
+    flex-grow: 2;
+}
+
+/* Pepper styling --------------- */
+
+.pepper-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 450px;
+    align-items: flex-start;
+}
+
+.pepper-item {
+    flex: 1 200px;
+}
+
+.pepper-2 {
+    flex-grow: 2;
+}
+
+/* Melon styling --------------- */
+
+.melon-container {
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+}
+
+.melon-item {
+    align-self: center;
+}
+

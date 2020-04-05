@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practising Flexbox & Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Open+Sans&display=swap" rel="stylesheet"> 
+   
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            <h1 class="header-name">Practising Flexbox</h1>
+                <nav class="nav-container">
+                    <ul class="main-nav">
+                        <li><a href="index.html">General</a></li>
+                        <li><a href="two-columns.html">Two Col</a></li>
+                        <li><a href="three-columns.html">Three Col</a></li>
+                        <li><a href="sfooter.html">Sticky</a></li>                          
+                    </ul>   
+                </nav>    
+       </div>    
+    </header>
+    <h3>Basic flex layout with height specified</h3>
+    <div class="apple-container container">
+      	<div class="apple-1 item">Apple 1</div>
+		<div class="apple-2 item">Apple 2</div>
+		<div class="apple-3 item">Apple 3</div>
+		<div class="apple-4 item">Apple 4</div>
+		<div class="apple-5 item">Apple 5</div>
+		<div class="apple-6 item">Apple 6</div>
+    </div>
+    <h3>Flex layout in a reverse column</h3>
+    <div class="orange-container container">
+		<div class="orange-1 item">Orange 1</div>
+		<div class="orange-2 item">Orange 2</div>
+		<div class="orange-3 item">Orange 3</div>
+		<div class="orange-4 item">Orange 4</div>
+		<div class="orange-5 item">Orange 5</div>
+		<div class="orange-6 item">Orange 6</div>
+    </div>
+    <h3>Flex row wrap and order change</h3>
+    <p>Items have a value of zero by default. Can have negative values. Useful for ordering differently on mobile and desktop.</p>
+    <div class="peach-container container">
+		<div class="peach-1 item">Peach 1</div>
+		<div class="peach-2 item">Peach 2</div>
+		<div class="peach-3 item">Peach 3</div>
+		<div class="peach-4 item">Peach 4</div>
+		<div class="peach-5 item">Peach 5</div>
+		<div class="peach-6 item">Peach 6</div>
+    </div>
+    <h3>Flex column wrap (with fixed container height)</h3>
+    <div class="pear-container container">
+		<div class="pear-1 item">Pear 1</div>
+		<div class="pear-2 item">Pear 2</div>
+		<div class="pear-3 item">Pear 3</div>
+		<div class="pear-4 item">Pear 4</div>
+		<div class="pear-5 item">Pear 5</div>
+		<div class="pear-6 item">Pear 6</div>
+    </div>
+    <h3>Justify content - space-around</h3>
+    <p>Can also use center, flex-start (default), flex-end, space-between, space-evenly.</p>
+    <div class="berry-container container">
+		<div class="berry-1 item">Berry 1</div>
+		<div class="berry-2 item">Berry 2</div>
+		<div class="berry-3 item">Berry 3</div>
+		<div class="berry-4 item">Berry 4</div>
+		<div class="berry-5 item">Berry 5</div>
+		<div class="berry-6 item">Berry 6</div>
+    </div>
+    <h3>Using margin-right auto on the first item</h3>
+    <p>Can use this for a nav layout. You can also put the margin auto on a different item to have e.g. two on the right and 4 on the left. 
+    </p>
+    <div class="lettuce-container container">
+		<div class="lettuce-1 item">Lettuce 1</div>
+		<div class="lettuce-2 item">Lettuce 2</div>
+		<div class="lettuce-3 item">Lettuce 3</div>
+		<div class="lettuce-4 item">Lettuce 4</div>
+		<div class="lettuce-5 item">Lettuce 5</div>
+		<div class="lettuce-6 item">Lettuce 6</div>
+    </div>
+    <h3>Flex Grow</h3>
+    <p>
+        Accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.
+
+        For example, if all items have flex-grow set to 1, every child will set to an equal size inside the container. If you were to give one of the children a value of 2, that child would take up twice as much space as the others (Only when there is enough space to grow.). Adjusts to browswer size. 
+    </p>
+    <div class="spinach-container container">
+		<div class="spinach-1 item spinach-item">Spinach 1</div>
+		<div class="spinach-2 item spinach-item">Spinach 2</div>
+		<div class="spinach-3 item spinach-item">Spinach 3</div>
+		<div class="spinach-4 item spinach-item">Spinach 4</div>
+		<div class="spinach-5 item spinach-item">Spinach 5</div>
+		<div class="spinach-6 item spinach-item">Spinach 6</div>
+    </div>
+    <h3>Flex grow with more content</h3>
+    <p></p>
+    <div class="peas-container container">
+		<div class="peas-1 item peas-item">Veggies melon azuki bean garlic.</div>
+		<div class="peas-2 item peas-item">Dandelion cucumber earthnut pea peanut soko zucchini.</div>
+		<div class="peas-3 item peas-item">Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</div>
+		<div class="peas-4 item peas-item">Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</div>
+	</div>
+    <h3>Flex basis</h3>
+    <p>Works alongside flex-grow to display equal but flexible widths.</p>
+    <div class="corn-container container">
+		<div class="corn-1 item corn-item">Veggies melon azuki bean garlic.</div>
+		<div class="corn-2 item corn-item">Dandelion cucumber earthnut pea peanut soko zucchini.</div>
+		<div class="corn-3 item corn-item">Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</div>
+		<div class="corn-4 item corn-item">Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</div>
+    </div>
+    <h3>Flex basis with more flex grow on one item</h3>
+    <div class="jicama-container container">
+		<div class="jicama-1 item jicama-item">Jicama Veggies melon azuki bean garlic.</div>
+		<div class="jicama-2 item jicama-item">Jicama Dandelion cucumber earthnut pea peanut soko zucchini.</div>
+		<div class="jicama-3 item jicama-item">Jicama Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</div>
+		<div class="jicama-4 item jicama-item">Jicama Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</div>
+	</div>
+    <h3>Flex start on align-items</h3>
+    <p>Can use align-self on individual items.</p>
+    <div class="pepper-container container">
+		<div class="pepper-1 item pepper-item">Pepper Veggies melon azuki bean garlic.</div>
+		<div class="pepper-2 item pepper-item">Pepper Dandelion cucumber earthnut pea peanut soko zucchini.</div>
+		<div class="pepper-3 item pepper-item">Pepper Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</div>
+		<div class="pepper-4 item pepper-item">Pepper Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</div>
+    </div>
+    <h3>Vertical and horizontal centering</h3>
+    <p>Alternatively, can use use margin:auto in the item.</p>
+    <div class="melon-container container">
+		<div class="melon-3 item melon-item">Pepper Grape wattle seed carrot squash brussels sprout chard.</div>
+    </div>
+    <div>
+        <h3>Two column web layout</h3>
+         <div class="two-container container">
+            <div class="two-one item two-item">Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</div>
+            <div class="two-two item two-item">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</div>
+        </div>
+    </div>
+</body>
+</html>
